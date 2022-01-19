@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         getDietData()
 
     }
+    //new commit test
     /**ok now create new activity*/
 
 
