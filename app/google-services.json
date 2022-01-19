@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "535750729083",
+    "project_id": "blended-c59cd",
+    "storage_bucket": "blended-c59cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535750729083:android:8d6e9b303d5ff29f1571de",
+        "android_client_info": {
+          "package_name": "com.example.blended"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "535750729083-i5reb2cpejmk97mu5o8o46ln45tu3jku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdtlfswpblrKeTkd_eYSWZTc4Qv0Sjwpo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "535750729083-i5reb2cpejmk97mu5o8o46ln45tu3jku.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
