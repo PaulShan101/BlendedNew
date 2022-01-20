@@ -9,15 +9,46 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AnimalInformation">
-        <activity android:name=".New"></activity>
-        <activity android:name=".MainActivity">
+
+
+        <activity android:name=".HomePage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".HomeInfo"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Calories"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".SpecialDiets"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".TubeCare"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".History"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".New"
+            android:screenOrientation="portrait" />
     </application>
+
+
 
 
 </manifest>
