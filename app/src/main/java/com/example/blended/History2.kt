@@ -2,28 +2,24 @@ package com.example.blended
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
 import android.widget.Toast
+
 import androidx.appcompat.app.AppCompatActivity
+
+
 
 import kotlinx.android.synthetic.main.activity_history.*
 
-
-import kotlinx.android.synthetic.main.activity_main.*
-
-class History : AppCompatActivity() {
+class History2 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_history)
-
-
-        relGenerate.setOnTouchListener(object : OnSwipeTouchListener(this@History) {
+        setContentView(R.layout.activity_history2)
+        relGenerate.setOnTouchListener(object : OnSwipeTouchListener(this@History2) {
 
             override fun onSwipeTop() {
                 super.onSwipeTop()
-                Toast.makeText(this@History, "Top is clicked", Toast.LENGTH_LONG).show()
+                Toast.makeText(this@History2, "Top is clicked", Toast.LENGTH_LONG).show()
             }
 
             override fun onSwipeBottom() {
@@ -33,8 +29,8 @@ class History : AppCompatActivity() {
 
             override fun onSwipeLeft() {
                 super.onSwipeLeft()
-                // Toast.makeText(this@HistoryMain,"right is clicked",Toast.LENGTH_LONG).show()
-                val intent = Intent(this@History, History1::class.java)
+                Toast.makeText(this@History2, "left is clicked", Toast.LENGTH_LONG).show()
+                val intent = Intent(this@History2, History::class.java)
                 startActivity(intent)
                 overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left)
             }
@@ -45,7 +41,7 @@ class History : AppCompatActivity() {
             }
         })
 
-        relPrint.setOnTouchListener(object : OnSwipeTouchListener(this@History) {
+        relPrint.setOnTouchListener(object : OnSwipeTouchListener(this@History2) {
 
             override fun onSwipeTop() {
                 super.onSwipeTop()
@@ -65,16 +61,14 @@ class History : AppCompatActivity() {
             override fun onSwipeRight() {
                 super.onSwipeRight()
 
-                val intent = Intent(this@History, History2::class.java)
+                val intent = Intent(this@History2, History::class.java)
                 startActivity(intent)
                 overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
 
-                //Toast.makeText(this@HistoryMain,"left is clicked",Toast.LENGTH_LONG).show()
+                Toast.makeText(this@History2, "left is clicked", Toast.LENGTH_LONG).show()
             }
         })
 
 
     }
 }
-
-
