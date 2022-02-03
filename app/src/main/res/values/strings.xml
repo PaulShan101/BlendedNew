@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Blended</string>
+    <string name="heading">heading</string>
+    <string name="tubehead1">heading 1</string>
+
+    <string name="Quote1">I couldnt be more chuffed if I were a badger at the start of the mating season. Ian Holloway (1963 -)</string>
+    <string name="Quote5">I don’t make predictions and never will. Paul Gascoigne (1967 -)</string>
 </resources>

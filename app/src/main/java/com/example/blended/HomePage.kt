@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import com.example.blended.Lists.CalorieMainList
 import kotlinx.android.synthetic.main.activity_homepage.*
 
 class HomePage : AppCompatActivity() {
@@ -47,7 +48,7 @@ class HomePage : AppCompatActivity() {
         btn_tubecare.setOnClickListener {
 
 
-            val intent = Intent(this@HomePage, TubeCare::class.java)
+            val intent = Intent(this@HomePage, TubeCareMainFragment::class.java)
 
             startActivity(intent)
 
@@ -55,7 +56,7 @@ class HomePage : AppCompatActivity() {
         }
         btn_special.setOnClickListener {
 
-            val intent = Intent(this@HomePage, SpecialDiets::class.java)
+            val intent = Intent(this@HomePage, MainActivity::class.java)
 
             startActivity(intent)
 
@@ -64,7 +65,7 @@ class HomePage : AppCompatActivity() {
         btn_calories.setOnClickListener {
 
 
-            val intent = Intent(this@HomePage, Calories::class.java)
+            val intent = Intent(this@HomePage, CalorieMainList::class.java)
 
             startActivity(intent)
 
@@ -73,7 +74,7 @@ class HomePage : AppCompatActivity() {
         btn_purchase.setOnClickListener {
 
 
-            val intent = Intent(this@HomePage, MainActivity::class.java)
+            val intent = Intent(this@HomePage, SpecialDiets::class.java)
 
             startActivity(intent)
 
