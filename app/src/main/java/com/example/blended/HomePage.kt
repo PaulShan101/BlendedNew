@@ -74,7 +74,7 @@ class HomePage : AppCompatActivity() {
         btn_purchase.setOnClickListener {
 
 
-            val intent = Intent(this@HomePage, SpecialDiets::class.java)
+            val intent = Intent(this@HomePage, ContactUs::class.java)
 
             startActivity(intent)
 

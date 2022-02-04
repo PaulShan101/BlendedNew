@@ -141,7 +141,7 @@ tools:context=".MainActivity">
         android:clickable="true"
         android:focusable="true"
         android:minWidth="100dp"
-        android:text="PURCHASE"
+        android:text="CONTACT US"
         android:textColor="@android:color/white"
         android:textSize="13sp" />
 
