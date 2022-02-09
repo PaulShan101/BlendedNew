@@ -20,16 +20,7 @@ tools:context=".MainActivity">
         android:layout_height="106dp"
         app:srcCompat="@drawable/blendedcolour1" />
 
-    <TextView
-    android:id="@+id/tv_app_name"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="30dp"
-    android:gravity="center"
-    android:text="@string/app_name"
-    android:textColor="@android:color/white"
-    android:textSize="36sp"
-    android:textStyle="bold|italic" />
+
 
 
 <androidx.cardview.widget.CardView
@@ -45,10 +36,11 @@ tools:context=".MainActivity">
 
     <Button
         android:id="@+id/btn_tubecare"
-        android:layout_width="110dp"
+        android:layout_width="120dp"
         android:layout_height="100dp"
         android:layout_marginStart="200dp"
         android:layout_marginTop="33dp"
+        android:background="#C6000000"
 
         android:clickable="true"
         android:focusable="true"
@@ -66,16 +58,17 @@ tools:context=".MainActivity">
 
         <Button
             android:id="@+id/btn_home"
-            android:layout_width="120dp"
-            android:layout_height="100dp"
+            android:layout_width="123dp"
+            android:layout_height="95dp"
             android:layout_marginTop="16dp"
-
             android:clickable="true"
             android:focusable="true"
             android:minWidth="100dp"
             android:text="HOME"
             android:textColor="@android:color/white"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            app:icon="@drawable/ic_baseline_home_24"
+            app:iconGravity="textTop" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
 
@@ -98,6 +91,7 @@ tools:context=".MainActivity">
         android:layout_marginStart="200dp"
         android:layout_marginTop="33dp"
 
+        app:iconGravity="textTop"
         android:clickable="true"
         android:focusable="true"
         android:minWidth="100dp"
@@ -145,7 +139,8 @@ tools:context=".MainActivity">
         android:layout_height="100dp"
         android:layout_marginStart="200dp"
         android:layout_marginTop="33dp"
-
+        app:icon="@drawable/ic_baseline_mail_outline_24"
+        app:iconGravity="textTop"
         android:clickable="true"
         android:focusable="true"
         android:minWidth="100dp"
@@ -164,7 +159,8 @@ tools:context=".MainActivity">
             android:layout_width="120dp"
             android:layout_height="100dp"
             android:layout_marginTop="16dp"
-
+            app:icon="@drawable/ic_baseline_history_24"
+            app:iconGravity="textTop"
             android:text="HISTORY"
             android:textColor="@android:color/white"
             android:textSize="14sp" />

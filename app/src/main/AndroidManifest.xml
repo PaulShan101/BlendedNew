@@ -6,9 +6,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/original"
+        android:icon="@drawable/blendedcolour1"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/original"
+        android:roundIcon="@drawable/blendedcolour1"
         android:supportsRtl="true"
         android:theme="@style/Theme.AnimalInformation">
 
