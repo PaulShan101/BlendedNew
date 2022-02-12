@@ -7,6 +7,14 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.example.blended.Lists.CalorieMainList
 import kotlinx.android.synthetic.main.activity_homepage.*
+import kotlinx.android.synthetic.main.button_layout.btn_tubecare
+import kotlinx.android.synthetic.main.button_layout.btn_home
+import kotlinx.android.synthetic.main.button_layout.btn_special
+import kotlinx.android.synthetic.main.button_layout.btn_calories
+import kotlinx.android.synthetic.main.button_layout.btn_history
+import kotlinx.android.synthetic.main.button_layout.btn_purchase
+
+import kotlinx.android.synthetic.main.button_layout.*
 
 class HomePage : AppCompatActivity() {
 
@@ -14,7 +22,7 @@ class HomePage : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_homepage)
+        setContentView(R.layout.button_layout)
 
 
 

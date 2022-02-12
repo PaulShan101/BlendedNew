@@ -18,7 +18,8 @@ class CalorieMainList : AppCompatActivity() {
     val counties = arrayOf<String>(
             "27 GRAMS",
             "16 GRAMS",
-            "21 GRAMS"
+            "21 GRAMS",
+            "25 GRAMS"
 
 
     )
@@ -28,14 +29,15 @@ class CalorieMainList : AppCompatActivity() {
     val description = arrayOf<String>(
             "105 CALORIES",
             "65 CALORIES",
-            "81 CALORIES"
+            "81 CALORIES",
+            "100 CALORIES"
 
 
     )
 
     //an array of images for the list view
     val imageId = arrayOf<Int>(
-            R.drawable.banana, R.drawable.orange1, R.drawable.apple,
+            R.drawable.banana, R.drawable.orange1, R.drawable.apple,R.drawable.soup
 
 
             )

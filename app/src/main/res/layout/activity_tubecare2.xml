@@ -23,7 +23,7 @@
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:paddingRight="10dp"
-            android:text="info 1"
+            android:text="NG TUBE"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="18sp" />

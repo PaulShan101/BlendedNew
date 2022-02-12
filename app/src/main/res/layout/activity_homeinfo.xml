@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -11,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="HOMEPAGE"
+        android:textColor="@color/white"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,6 +43,7 @@
         android:text="My idea is a blended diet app that will provide information and allow tube feeders to purchase things that will help them maintain a balanced diet. This project is being undertaken since my son is tube fed and requires blended meals daily. This has not yet been recognized by the Irish market, which is still in the early stages of requesting information on blended diets. I'd like to learn more about how different countries use it and the tactics they employ. In Ireland, about 2,500 people require tube feeding due to medical conditions such as a stroke or a Brian injury. In my app I will have friendly user interface with easy to navigate menus and updated recipes every few weeks. I will have information pages in my app from my research and 4 years’ experience of using Blended Diets. I plan on using the skills I have learned over the past few years in college and integrating them with my knowledge of blended feeds and releasing the app on the play store to the public."
         android:textAlignment="center"
         android:textSize="18sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
