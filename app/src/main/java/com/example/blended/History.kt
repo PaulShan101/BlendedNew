@@ -6,6 +6,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.blended.Lists.CalorieMainList
 
 import kotlinx.android.synthetic.main.activity_history.*
 
@@ -75,6 +76,52 @@ class History : AppCompatActivity() {
 
 
     }
+
+    //menu for the page
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.main, menu)
+        return true
+    }
+
+    //when u click on a menu item the next activity shows
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when (item.itemId) {
+            R.id.home -> {
+                val intent = Intent(this@History, HomeInfo::class.java)
+                startActivity(intent)
+            }
+
+            R.id.tube -> {
+                val intent = Intent(this@History, TubeCareMainFragment::class.java)
+                startActivity(intent)
+            }
+            R.id.calories -> {
+                val intent = Intent(this@History, CalorieMainList::class.java)
+                startActivity(intent)
+            }
+            R.id.special -> {
+                val intent = Intent(this@History, MainActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.history -> {
+                val intent = Intent(this@History, History::class.java)
+                startActivity(intent)
+            }
+            R.id.contact -> {
+                val intent = Intent(this@History, ContactUs::class.java)
+                startActivity(intent)
+
+            }
+
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+
+
+
 }
 
 

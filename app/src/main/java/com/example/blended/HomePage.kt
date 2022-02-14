@@ -101,47 +101,47 @@ class HomePage : AppCompatActivity() {
 
     }
 
-//    //menu for the page
-//    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-//        val inflater = menuInflater
-//        inflater.inflate(R.menu.main, menu)
-//        return true
-//    }
-//
-//    //when u click on a menu item the next activity shows
-//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-//
-//        when (item.itemId) {
-//            R.id.home_1 -> {
-//                val intent = Intent(this@MainQuizPage, StartPage::class.java)
-//                startActivity(intent)
-//            }
-//
-//            R.id.cl_1 -> {
-//                val intent = Intent(this@MainQuizPage, MainActivity::class.java)
-//                startActivity(intent)
-//            }
-//            R.id.pl_1 -> {
-//                val intent = Intent(this@MainQuizPage, PremierLeagueSet1::class.java)
-//                startActivity(intent)
-//            }
-//            R.id.wc_1 -> {
-//                val intent = Intent(this@MainQuizPage, MainWorldCup::class.java)
-//                startActivity(intent)
-//            }
-//            R.id.qz_1 -> {
-//                val intent = Intent(this@MainQuizPage, MainQuizPage::class.java)
-//                startActivity(intent)
-//            }
-//            R.id.onq_1 -> {
-//                val intent = Intent(this@MainQuizPage, OnlineQuiz::class.java)
-//                startActivity(intent)
-//
-//            }
-//
-//        }
-//        return super.onOptionsItemSelected(item)
-//    }
+    //menu for the page
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.main, menu)
+        return true
+    }
+
+    //when u click on a menu item the next activity shows
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when (item.itemId) {
+            R.id.home -> {
+                val intent = Intent(this@HomePage, HomeInfo::class.java)
+                startActivity(intent)
+            }
+
+            R.id.tube -> {
+                val intent = Intent(this@HomePage, TubeCareMainFragment::class.java)
+                startActivity(intent)
+            }
+            R.id.calories -> {
+                val intent = Intent(this@HomePage, CalorieMainList::class.java)
+                startActivity(intent)
+            }
+            R.id.special -> {
+                val intent = Intent(this@HomePage, MainActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.history -> {
+                val intent = Intent(this@HomePage, History::class.java)
+                startActivity(intent)
+            }
+            R.id.contact -> {
+                val intent = Intent(this@HomePage, ContactUs::class.java)
+                startActivity(intent)
+
+            }
+
+        }
+        return super.onOptionsItemSelected(item)
+    }
 
 
 

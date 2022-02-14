@@ -1,8 +1,12 @@
 package com.example.blended
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.example.blended.Lists.CalorieMainList
 import kotlinx.android.synthetic.main.activity_tubecare_fragment.*
 
 class TubeCareMainFragment : AppCompatActivity() {
@@ -42,9 +46,51 @@ class TubeCareMainFragment : AppCompatActivity() {
             }
 
 
+    //menu for the page
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.main, menu)
+        return true
+    }
+
+    //when u click on a menu item the next activity shows
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when (item.itemId) {
+            R.id.home -> {
+                val intent = Intent(this@TubeCareMainFragment, HomeInfo::class.java)
+                startActivity(intent)
+            }
+
+            R.id.tube -> {
+                val intent = Intent(this@TubeCareMainFragment, TubeCareMainFragment::class.java)
+                startActivity(intent)
+            }
+            R.id.calories -> {
+                val intent = Intent(this@TubeCareMainFragment, CalorieMainList::class.java)
+                startActivity(intent)
+            }
+            R.id.special -> {
+                val intent = Intent(this@TubeCareMainFragment, MainActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.history -> {
+                val intent = Intent(this@TubeCareMainFragment, History::class.java)
+                startActivity(intent)
+            }
+            R.id.contact -> {
+                val intent = Intent(this@TubeCareMainFragment, ContactUs::class.java)
+                startActivity(intent)
+
+            }
+
+        }
+        return super.onOptionsItemSelected(item)
+    }
 
 
 
 
 }
+
 

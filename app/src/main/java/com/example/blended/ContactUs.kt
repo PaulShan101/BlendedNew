@@ -2,9 +2,12 @@ package com.example.blended
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import com.example.blended.Lists.CalorieMainList
 
 
 class ContactUs : AppCompatActivity() {
@@ -33,4 +36,49 @@ class ContactUs : AppCompatActivity() {
         intent.type = "message/rfc822"
         startActivity(Intent.createChooser(intent, "Choose an email client"))
     }
+    //menu for the page
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.main, menu)
+        return true
+    }
+
+    //when u click on a menu item the next activity shows
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when (item.itemId) {
+            R.id.home -> {
+                val intent = Intent(this@ContactUs, HomeInfo::class.java)
+                startActivity(intent)
+            }
+
+            R.id.tube -> {
+                val intent = Intent(this@ContactUs, TubeCareMainFragment::class.java)
+                startActivity(intent)
+            }
+            R.id.calories -> {
+                val intent = Intent(this@ContactUs, CalorieMainList::class.java)
+                startActivity(intent)
+            }
+            R.id.special -> {
+                val intent = Intent(this@ContactUs, MainActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.history -> {
+                val intent = Intent(this@ContactUs, History::class.java)
+                startActivity(intent)
+            }
+            R.id.contact -> {
+                val intent = Intent(this@ContactUs, ContactUs::class.java)
+                startActivity(intent)
+
+            }
+
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+
+
+
 }

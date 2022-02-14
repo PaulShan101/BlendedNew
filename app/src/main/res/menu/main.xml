@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+
+<item
+    android:id="@+id/home"
+    android:title="Home" />
+<item
+    android:id="@+id/tube"
+    android:title="Tube Care" />
+
+
+<item
+    android:id="@+id/calories"
+    android:title="Calories" />
+<item
+    android:id="@+id/special"
+    android:title="Special Diets" />
+<item
+    android:id="@+id/history"
+    android:title="History" />
+<item
+    android:id="@+id/contact"
+    android:title="Contact Us" />
+
+
+
+
+
+
+</menu>
+
+
+
