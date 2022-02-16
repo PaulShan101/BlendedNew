@@ -40,38 +40,22 @@
             android:textColor="#FFFFFF"
             android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="79dp"
-            android:paddingLeft="10dp"
-            android:paddingTop="20dp"
-            android:paddingRight="10dp"
 
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="79dp"
-            android:paddingLeft="10dp"
-            android:paddingTop="20dp"
-            android:paddingRight="10dp"
-
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="match_parent"
-            android:layout_height="85dp"
+            android:layout_height="486dp"
             android:paddingLeft="10dp"
             android:paddingTop="20dp"
             android:paddingRight="10dp"
-            android:text="info 4"
+            android:text="There is one unbreakable rule that must be followed at all times: AFTERWARDS, FLUSH THE TUBE WITH WATER.  It's a good idea to flush before you start.
+It's also a good idea to do this if you're making a presentation
+medicines as soon as possible after a meal  Alternatively, if you have access to free water, it is not as necessary.  It's a good idea to flush before you start.  guarantee the tube is loose and flows well, but you MUST ALWAYS USE WATER TO FLUSH
+thereafter. The amount of water to utilize will be determined.  It depends on your circumstances, but  must be sufficient to completely clean the tube of any contaminants  medications that may yet be available  ensuring that everything reaches the stomach  that the tube is completely transparent  thereafter. For an infant, a 5ml syringe will suffice.  addressing concerns of volume tolerance at a
+squeeze. A 5ml syringe full will do for a baby with volume tolerance issues at a
+pinch, but I do at least 50ml myself via gravity."
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="18sp" />
@@ -88,17 +72,7 @@
             android:textColor="#FFFFFF"
             android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:paddingLeft="10dp"
-            android:paddingTop="20dp"
-            android:paddingRight="10dp"
-            android:text="info 6"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
+
 
 
     </LinearLayout>

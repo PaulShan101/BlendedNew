@@ -16,14 +16,14 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tubehead1"
+            android:id="@+id/Tips"
             android:layout_width="match_parent"
             android:layout_height="64dp"
             android:autoText="false"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:paddingRight="10dp"
-            android:text="heading 3"
+            android:text="TIPS"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="18sp" />
@@ -35,70 +35,13 @@
             android:autoText="false"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-
+            android:text="Tubefeeding can be done in a variety of ways. In terms of size and timing of delivery to the stomach, some are more naturalistic. Some people can be on a pump for up to 18 hours a day if they are unable to handle it. Various circumstances necessitate  for various techniques Most J-feeds will be done at a very slow rate using a pump. and will be utilizing elemental formulae, but some people are also using blended formulations. Your medical team will help you decide what is best for your situation."
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="79dp"
-            android:paddingLeft="10dp"
-            android:paddingTop="20dp"
-            android:paddingRight="10dp"
 
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="79dp"
-            android:paddingLeft="10dp"
-            android:paddingTop="20dp"
-            android:paddingRight="10dp"
-
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="85dp"
-            android:paddingLeft="10dp"
-            android:paddingTop="20dp"
-            android:paddingRight="10dp"
-
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:paddingLeft="10dp"
-            android:paddingTop="20dp"
-            android:paddingRight="10dp"
-
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:paddingLeft="10dp"
-            android:paddingTop="20dp"
-            android:paddingRight="10dp"
-            android:text="info 6"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
 
 
     </LinearLayout>

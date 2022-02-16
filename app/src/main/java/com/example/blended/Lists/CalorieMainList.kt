@@ -15,11 +15,11 @@ class CalorieMainList : AppCompatActivity() {
 
 
     //this array will be printed out in the list view
-    val counties = arrayOf<String>(
-            "27 GRAMS",
-            "16 GRAMS",
-            "21 GRAMS",
-            "25 GRAMS",
+    val calories = arrayOf<String>(
+            "Banana (1)  27 GRAMS",
+            "Orange (1)  16 GRAMS",
+            "Apple  (1)  21 GRAMS",
+            "Soup   (1)  25 GRAMS",
             "Grapes (1 Cup) 28 GRAMS"
 
 
@@ -48,8 +48,8 @@ class CalorieMainList : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_listview)
 
-        val search = findViewById<SearchView>(R.id.searchView) as SearchView
-        val myListAdapter = ListViewAdapter(this, counties, description, imageId)
+
+        val myListAdapter = ListViewAdapter(this, calories, description, imageId)
 
         listView.adapter = myListAdapter
 

@@ -26,7 +26,7 @@ class DietAdapter(
 
     override fun onBindViewHolder(holder: DietViewHolder, position: Int) {
         val newList = dietList[position]
-        holder.v.isAnimals = dietList[position]
+        holder.v.isDiet = dietList[position]
         holder.v.root.setOnClickListener {
             val img = newList.img
             val name = newList.name
