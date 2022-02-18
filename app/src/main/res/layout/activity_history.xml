@@ -13,50 +13,26 @@
     <RelativeLayout
         android:id="@+id/relGenerate"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="672dp"
         android:layout_marginTop="50dp"
         android:background="@color/black">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:gravity="center"
-            android:text="Swipe left to Open Future."
-            android:textColor="#ffffff"
-            android:textSize="20sp"
-            android:textStyle="bold|italic" />
-
-    </RelativeLayout>
-
-
-    <RelativeLayout
-        android:id="@+id/relPrint"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="50dp"
-        android:background="@color/white">
-
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/banana" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:gravity="center"
-            android:text="Swipe right to Open Past."
+            android:text="Swipe Left or Right."
             android:textColor="#ffffff"
             android:textSize="20sp"
             android:textStyle="bold|italic" />
 
     </RelativeLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="319dp"
-        android:backgroundTint="#4D4B3FB5"
-        android:gravity="center"
-        android:text="Swipe"
-        android:textColor="#070707"
-        android:textSize="20sp"
-        android:textStyle="bold|italic" />
 </LinearLayout>

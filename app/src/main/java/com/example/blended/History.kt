@@ -34,7 +34,7 @@ class History : AppCompatActivity() {
 
             override fun onSwipeLeft() {
                 super.onSwipeLeft()
-                // Toast.makeText(this@HistoryMain,"right is clicked",Toast.LENGTH_LONG).show()
+                 Toast.makeText(this@History,"left is clicked",Toast.LENGTH_LONG).show()
                 val intent = Intent(this@History, History1::class.java)
                 startActivity(intent)
                 overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left)
@@ -42,37 +42,13 @@ class History : AppCompatActivity() {
 
             override fun onSwipeRight() {
                 super.onSwipeRight()
-                //  Toast.makeText(this@MainActivity,"right is clicked",Toast.LENGTH_LONG).show()
-            }
-        })
-
-        relPrint.setOnTouchListener(object : OnSwipeTouchListener(this@History) {
-
-            override fun onSwipeTop() {
-                super.onSwipeTop()
-                //    Toast.makeText(this@MainActivity,"Top is clicked",Toast.LENGTH_LONG).show()
-            }
-
-            override fun onSwipeBottom() {
-                super.onSwipeBottom()
-                //  Toast.makeText(this@MainActivity,"Bottom is clicked",Toast.LENGTH_LONG).show()
-            }
-
-            override fun onSwipeLeft() {
-                super.onSwipeLeft()
-                //   Toast.makeText(this@MainActivity,"Left is clicked",Toast.LENGTH_LONG).show()
-            }
-
-            override fun onSwipeRight() {
-                super.onSwipeRight()
-
+                Toast.makeText(this@History,"right is clicked", Toast.LENGTH_LONG).show()
                 val intent = Intent(this@History, History2::class.java)
                 startActivity(intent)
                 overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
-
-                //Toast.makeText(this@HistoryMain,"left is clicked",Toast.LENGTH_LONG).show()
             }
         })
+
 
 
     }

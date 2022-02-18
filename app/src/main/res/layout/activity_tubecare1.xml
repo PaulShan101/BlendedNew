@@ -11,7 +11,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="673dp"
+        android:layout_height="648dp"
         android:background="@drawable/gradient"
         android:orientation="vertical">
 
@@ -24,18 +24,6 @@
             android:paddingTop="10dp"
             android:paddingRight="10dp"
             android:text="G TUBE"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:autoText="true"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="18sp" />
@@ -55,19 +43,20 @@
         <TextView
             android:id="@+id/textView5"
             android:layout_width="match_parent"
-            android:layout_height="175dp"
+            android:layout_height="114dp"
             android:paddingLeft="10dp"
             android:paddingTop="20dp"
             android:paddingRight="10dp"
             android:text="A gastrostomy tube (also called a G-tube) is a tube inserted through the belly that brings nutrition directly to the stomach. It's one of the ways doctors can make sure kids who have trouble eating get the fluid and calories they need."
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="270dp"
+            android:layout_marginBottom="40dp"
             android:src="@drawable/gtube" />
 
 
