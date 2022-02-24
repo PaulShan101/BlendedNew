@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 
 class Splash : AppCompatActivity() {
-    internal val TIME_OUT = 3000
+    internal val TIME_OUT = 2000
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)

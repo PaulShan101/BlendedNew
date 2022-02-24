@@ -4,7 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.example.blended.Diary.DiaryActivity
 import com.example.blended.Lists.CalorieMainList
 import kotlinx.android.synthetic.main.activity_homepage.*
 import kotlinx.android.synthetic.main.button_layout.btn_tubecare
@@ -26,17 +28,6 @@ class HomePage : AppCompatActivity() {
 
 
 
-        // To hide the status bar.
-        // window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
-
-        /*    act1.setOnClickListener {
-
-            val intent = Intent(this@MainActivity, SecondConstraintSet::class.java)
-            startActivity(intent)*/
-
-
-
-
 
         btn_home.setOnClickListener {
 
@@ -47,9 +38,6 @@ class HomePage : AppCompatActivity() {
 
 
         }
-
-
-
 
 
 
@@ -92,6 +80,26 @@ class HomePage : AppCompatActivity() {
 
 
             val intent = Intent(this@HomePage, History::class.java)
+
+            startActivity(intent)
+
+
+        }
+
+        btn_bmi.setOnClickListener {
+
+
+            val intent = Intent(this@HomePage, BMIActivity::class.java)
+
+            startActivity(intent)
+
+
+        }
+
+        btn_diary.setOnClickListener {
+
+
+            val intent = Intent(this@HomePage, DiaryActivity::class.java)
 
             startActivity(intent)
 

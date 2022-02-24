@@ -5,4 +5,12 @@
 
     <string name="Quote1">I couldnt be more chuffed if I were a badger at the start of the mating season. Ian Holloway (1963 -)</string>
     <string name="Quote5">I don’t make predictions and never will. Paul Gascoigne (1967 -)</string>
+
+    <string name="current_date_text_string">current date</string>
+    <string name="title_hint">title</string>
+    <string name="diary_hint">your diary</string>
+    <string name="save_diary">save</string>
+    <string name="delete_diary">delete</string>
+    <string name="diary_recycler_date">diary date</string>
+    <string name="diary_recycler_title_text_view">diary title</string>
 </resources>
