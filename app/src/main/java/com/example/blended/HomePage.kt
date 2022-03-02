@@ -26,13 +26,14 @@ class HomePage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.button_layout)
 
+        
 
 
 
         btn_home.setOnClickListener {
 
 
-            val intent = Intent(this@HomePage, HomeInfo::class.java)
+            val intent = Intent(this@HomePage, HomeDrawer::class.java)
 
             startActivity(intent)
 

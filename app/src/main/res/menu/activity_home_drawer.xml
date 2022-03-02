@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="HOME" />
+
+
+
+
+
+    <item
+        android:id="@+id/tubecare"
+        android:icon="@drawable/tube"
+        android:title="TUBE CARE" />
+
+    <item
+        android:id="@+id/calories1"
+        android:icon="@drawable/calories"
+        android:title="CALORIES" />
+
+    <item
+        android:id="@+id/special1"
+        android:icon="@drawable/nutrition"
+        android:title="SPECIAL DIETS" />
+
+    <item
+        android:id="@+id/history1"
+        android:icon="@drawable/clock"
+        android:title="HISTORY" />
+
+    <item
+        android:id="@+id/contact1"
+        android:icon="@drawable/mail"
+        android:title="CONTACT US" />
+
+    <item
+        android:id="@+id/bmi1"
+        android:icon="@drawable/bmi"
+        android:title="BMI" />
+
+    <item
+        android:id="@+id/diary1"
+        android:icon="@drawable/pencil"
+        android:title="FOOD DIARY" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</menu>
+

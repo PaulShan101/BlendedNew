@@ -53,7 +53,22 @@ class CalorieMainList : AppCompatActivity() {
 
         listView.adapter = myListAdapter
 
+        val search = findViewById<SearchView>(R.id.searchView) as SearchView
 
+        search.setOnQueryTextListener(object:SearchView.OnQueryTextListener  {
+
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                TODO("Not yet implemented")
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                myListAdapter.filter.filter(newText)
+                return false
+            }
+        }
+
+        )
 
 
 
