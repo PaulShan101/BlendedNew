@@ -6,8 +6,12 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.SearchView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.MenuItemCompat
+import androidx.core.view.contains
 import com.example.blended.*
+import com.example.blended.Diary.DiaryActivity
 import kotlinx.android.synthetic.main.activity_listview.*
 
 
@@ -48,6 +52,8 @@ class CalorieMainList : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_listview)
 
+       // var viewSearch = MenuItemCompat.getActionView(menuItem) as SearchView
+
 
         val myListAdapter = ListViewAdapter(this, calories, description, imageId)
 
@@ -58,13 +64,19 @@ class CalorieMainList : AppCompatActivity() {
         search.setOnQueryTextListener(object:SearchView.OnQueryTextListener  {
 
             override fun onQueryTextSubmit(query: String?): Boolean {
-                TODO("Not yet implemented")
-                return false
+                 if(calories.contains(query)) {
+                     myListAdapter.filter.filter(query)
+                 } else {
+                     Toast.makeText(this@CalorieMainList, "No Match found", Toast.LENGTH_LONG).show()
+                 }
+                 return false
             }
 
             override fun onQueryTextChange(newText: String?): Boolean {
                 myListAdapter.filter.filter(newText)
+                calories.contains(newText.toString())
                 return false
+
             }
         }
 
@@ -147,6 +159,16 @@ class CalorieMainList : AppCompatActivity() {
             }
             R.id.contact -> {
                 val intent = Intent(this@CalorieMainList, ContactUs::class.java)
+                startActivity(intent)
+
+            }
+            R.id.bmi1 -> {
+                val intent = Intent(this@CalorieMainList, BMIActivity::class.java)
+                startActivity(intent)
+
+            }
+            R.id.diary1 -> {
+                val intent = Intent(this@CalorieMainList, DiaryActivity::class.java)
                 startActivity(intent)
 
             }

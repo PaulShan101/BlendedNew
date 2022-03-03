@@ -1,10 +1,17 @@
 package com.example.blended
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
+
 import android.widget.RadioGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat.startActivity
+import com.example.blended.Diary.DiaryActivity
+import com.example.blended.Lists.CalorieMainList
 import kotlinx.android.synthetic.main.activity_bmi1.*
 
 import java.math.BigDecimal
@@ -174,52 +181,52 @@ class BMIActivity : AppCompatActivity() {
 
         if (java.lang.Float.compare(bmi, 15f) <= 0) {
             bmiLabel = "Very severely underweight"
-            bmiDescription = "Oops! You really need to take care of your better! Eat more!"
+            bmiDescription = "Add alot more Calories to your Diet"
         } else if (java.lang.Float.compare(bmi, 15f) > 0 && java.lang.Float.compare(
                         bmi,
                         16f
                 ) <= 0
         ) {
             bmiLabel = "Severely underweight"
-            bmiDescription = "Oops! You really need to take care of your better! Eat more!"
+            bmiDescription = "Add some calories to your Diet "
         } else if (java.lang.Float.compare(bmi, 16f) > 0 && java.lang.Float.compare(
                         bmi,
                         18.5f
                 ) <= 0
         ) {
             bmiLabel = "Underweight"
-            bmiDescription = "Oops! You really need to take care of your better! Eat more!"
+            bmiDescription = "You need more calories"
         } else if (java.lang.Float.compare(bmi, 18.5f) > 0 && java.lang.Float.compare(
                         bmi,
                         25f
                 ) <= 0
         ) {
             bmiLabel = "Normal"
-            bmiDescription = "Congratulations! You are in a good shape!"
+            bmiDescription = "Congratulations! you are a healthy weignt. Maintain your Diet"
         } else if (java.lang.Float.compare(bmi, 25f) > 0 && java.lang.Float.compare(
                         bmi,
                         30f
                 ) <= 0
         ) {
             bmiLabel = "Overweight"
-            bmiDescription = "Oops! You really need to take care of your yourself! Workout maybe!"
+            bmiDescription = "Reduce calories from your diet"
         } else if (java.lang.Float.compare(bmi, 30f) > 0 && java.lang.Float.compare(
                         bmi,
                         35f
                 ) <= 0
         ) {
             bmiLabel = "Obese Class | (Moderately obese)"
-            bmiDescription = "Oops! You really need to take care of your yourself! Workout maybe!"
+            bmiDescription = "Reduce soem calories from your Diet"
         } else if (java.lang.Float.compare(bmi, 35f) > 0 && java.lang.Float.compare(
                         bmi,
                         40f
                 ) <= 0
         ) {
             bmiLabel = "Obese Class || (Severely obese)"
-            bmiDescription = "OMG! You are in a very dangerous condition! Act now!"
+            bmiDescription = "Reduce alot of calories from your Diet"
         } else {
             bmiLabel = "Obese Class ||| (Very Severely obese)"
-            bmiDescription = "OMG! You are in a very dangerous condition! Act now!"
+            bmiDescription = "Reduce alot of calories from your Diet"
         }
 
         tvYourBMI.visibility = View.VISIBLE
@@ -234,4 +241,61 @@ class BMIActivity : AppCompatActivity() {
         tvBMIType.text = bmiLabel // Label is set to TextView
         tvBMIDescription.text = bmiDescription // Description is set to TextView
     }
+
+
+    //menu for the page
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.main, menu)
+        return true
+    }
+
+    //when u click on a menu item the next activity shows
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when (item.itemId) {
+            R.id.home -> {
+                val intent = Intent(this@BMIActivity, HomeInfo::class.java)
+                startActivity(intent)
+            }
+
+            R.id.tube -> {
+                val intent = Intent(this@BMIActivity, TubeCareMainFragment::class.java)
+                startActivity(intent)
+            }
+            R.id.calories -> {
+                val intent = Intent(this@BMIActivity, CalorieMainList::class.java)
+                startActivity(intent)
+            }
+            R.id.special -> {
+                val intent = Intent(this@BMIActivity, MainActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.history -> {
+                val intent = Intent(this@BMIActivity, History::class.java)
+                startActivity(intent)
+            }
+            R.id.contact -> {
+                val intent = Intent(this@BMIActivity, ContactUs::class.java)
+                startActivity(intent)
+
+            }
+            R.id.bmi1 -> {
+                val intent = Intent(this@BMIActivity, BMIActivity::class.java)
+                startActivity(intent)
+
+            }
+            R.id.diary1 -> {
+                val intent = Intent(this@BMIActivity, DiaryActivity::class.java)
+                startActivity(intent)
+
+            }
+
+        }
+        return super.onOptionsItemSelected(item)
+    }
 }
+
+
+
+

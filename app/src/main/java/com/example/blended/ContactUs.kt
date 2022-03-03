@@ -7,6 +7,7 @@ import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import com.example.blended.Diary.DiaryActivity
 import com.example.blended.Lists.CalorieMainList
 
 
@@ -70,6 +71,16 @@ class ContactUs : AppCompatActivity() {
             }
             R.id.contact -> {
                 val intent = Intent(this@ContactUs, ContactUs::class.java)
+                startActivity(intent)
+
+            }
+            R.id.bmi1 -> {
+                val intent = Intent(this@ContactUs, BMIActivity::class.java)
+                startActivity(intent)
+
+            }
+            R.id.diary1 -> {
+                val intent = Intent(this@ContactUs, DiaryActivity::class.java)
                 startActivity(intent)
 
             }

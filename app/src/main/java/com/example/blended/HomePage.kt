@@ -147,6 +147,16 @@ class HomePage : AppCompatActivity() {
                 startActivity(intent)
 
             }
+            R.id.bmi1 -> {
+                val intent = Intent(this@HomePage, BMIActivity::class.java)
+                startActivity(intent)
+
+            }
+            R.id.diary1 -> {
+                val intent = Intent(this@HomePage, DiaryActivity::class.java)
+                startActivity(intent)
+
+            }
 
         }
         return super.onOptionsItemSelected(item)
