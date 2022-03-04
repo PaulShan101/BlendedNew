@@ -64,6 +64,7 @@ class CalorieMainList : AppCompatActivity() {
         search.setOnQueryTextListener(object:SearchView.OnQueryTextListener  {
 
             override fun onQueryTextSubmit(query: String?): Boolean {
+                search.clearFocus()
                  if(calories.contains(query)) {
                      myListAdapter.filter.filter(query)
                  } else {
@@ -73,8 +74,8 @@ class CalorieMainList : AppCompatActivity() {
             }
 
             override fun onQueryTextChange(newText: String?): Boolean {
-                myListAdapter.filter.filter(newText)
-                calories.contains(newText.toString())
+//                myListAdapter.filter.filter(newText)
+//                calories.contains(newText.toString())
                 return false
 
             }
@@ -95,33 +96,7 @@ class CalorieMainList : AppCompatActivity() {
         listView.setOnItemClickListener() { adapterView, view, position, id ->
 
 
-            //if statement for when the position is clicked the https appears
-            if (position == 0) {
-                //val intent = Intent(this@MainWorldCup, MainQuizPage::class.java)
-                // startActivity(intent)
-                val i = Intent(
-                        Intent.ACTION_VIEW,
-                        Uri.parse("https://en.wikipedia.org/wiki/Tipperary_GAA")
-                )
-                startActivity(i)
 
-            }
-            if (position == 1) {
-                val i = Intent(
-                        Intent.ACTION_VIEW,
-                        Uri.parse("https://en.wikipedia.org/wiki/Cork_GAA")
-                )
-                startActivity(i)
-
-            }
-            if (position == 2) {
-                val i = Intent(
-                        Intent.ACTION_VIEW,
-                        Uri.parse("https://en.wikipedia.org/wiki/Kerry_GAA")
-                )
-                startActivity(i)
-
-            }
 
         }
     }
