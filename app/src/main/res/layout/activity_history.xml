@@ -19,18 +19,64 @@
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/banana" />
+            android:layout_width="89dp"
+            android:layout_height="78dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="163dp"
+            android:layout_marginBottom="476dp"
+            android:src="@drawable/vitamin1" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginBottom="582dp"
+            android:text="Suppliments Via Tube"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="161dp"
             android:gravity="center"
-            android:text="Swipe Left or Right."
+            android:text="You should be able to give supplements
+through the feeding tube without any issues.
+You will need a pill crusher and some medicine
+syringes. Crush pills up and mix them with a
+little water or juice and you should be fine. For
+gel pills, you will need to squeeze the
+supplement out and mix with a little warm water
+for best results. If you are giving supplements to
+a child make sure you are only buying children
+supplement and not adult. This will ensure you
+are giving child appropriate doses. If the person
+is taking any kind of medication, please check
+with a doctor or pharmacist first to check for any
+possible interaction. And before taking some
+supplements, you should have your levels
+check before consuming. Always use common
+sense and proper safety precautions. And
+never stop taking your medicine because you
+feel a supplement
+
+is a better replacement or alternative. It might
+be. But until you are medically cleared under a
+doctors order, you should continue your meds.
+Tip shared by Mom Tiffany Coleman"
             android:textColor="#ffffff"
-            android:textSize="20sp"
+            android:textSize="14sp"
             android:textStyle="bold|italic" />
 
     </RelativeLayout>

@@ -9,12 +9,7 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
-    <ImageView
-        android:id="@+id/imageView3"
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/orange1" />
 
     <include
         layout="@layout/app_bar_home"

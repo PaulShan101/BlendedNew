@@ -18,19 +18,75 @@
         android:background="@color/white">
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/imageView4"
+            android:layout_width="116dp"
+            android:layout_height="110dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="152dp"
+            android:layout_marginBottom="455dp"
+            android:src="@drawable/calculator1" />
+
+        <TextView
+            android:id="@+id/textView3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/apple" />
+            android:layout_height="66dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginBottom="582dp"
+            android:text="Blending on a Budget"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="105dp"
             android:gravity="center"
-            android:text="Swipe Left or Right."
+            android:text="When I first got started I was spending a lot of
+money on my childs weekly meals. Im literally
+talking hundreds a month! It was ridiculous and
+very frustrating. Then I figured out how to make
+this more cost effective and one way was to
+also use my daughters therapeutic nutrition
+formula to make the meal batches. So this is
+what my recipe looks like: 1-2 cans of formula -
+whatever you have 1 Boneless skinless chicken
+thigh - cooked 5 oz of green beans, sweet
+peas, kale, etc 5 oz of apples, pears, peaches,
+etc 1 tsp of salt 1 tsp of sugar 30mls of olive oil
+1/3 cup of cooked rice 8 oz of water or orange
+juice I blend all of this together and strain.
+Sometimes I will have to add extra water or
+juice because the formula is not as thin as I
+would like. You can use canned goods for your
+fruits and veggies. I also use fresh ingredients
+too when they are on sale or I
+
+find a good price. Instead of spending 100s, I
+might spend about 50-70 a month on her
+food. I also use turkey meat and a variety of
+other fruits and veggies. Chicken thighs and
+legs blend the best, chicken breast not at all for
+me. The possibility is endless here. You can do
+this too - just use my recipe as a guide to create
+your own. Adjust the serving size portion based
+on the persons nutritional needs.
+My daughters dietitian helped me come up with
+this and I just tweak it as I go. My daughter is
+still getting the benefits from having real food in
+her diet and I have seen a positive change
+since I switch from giving her nothing but
+formula to a mix of the two. -Molly P, Kentucky"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="12sp"
             android:textStyle="bold|italic" />
 
     </RelativeLayout>

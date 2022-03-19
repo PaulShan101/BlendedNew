@@ -19,7 +19,7 @@ class CalorieMainList : AppCompatActivity() {
 
 
     //this array will be printed out in the list view
-    val calories = arrayOf<String>(
+    val title = arrayOf<String>(
             "Banana (1)  27 GRAMS",
             "Orange (1)  16 GRAMS",
             "Apple  (1)  21 GRAMS",
@@ -55,7 +55,7 @@ class CalorieMainList : AppCompatActivity() {
        // var viewSearch = MenuItemCompat.getActionView(menuItem) as SearchView
 
 
-        val myListAdapter = ListViewAdapter(this, calories, description, imageId)
+        val myListAdapter = ListViewAdapter(this, title, description, imageId)
 
         listView.adapter = myListAdapter
 
@@ -64,8 +64,8 @@ class CalorieMainList : AppCompatActivity() {
         search.setOnQueryTextListener(object:SearchView.OnQueryTextListener  {
 
             override fun onQueryTextSubmit(query: String?): Boolean {
-                search.clearFocus()
-                 if(calories.contains(query)) {
+
+                 if(description.contains(query)) {
                      myListAdapter.filter.filter(query)
                  } else {
                      Toast.makeText(this@CalorieMainList, "No Match found", Toast.LENGTH_LONG).show()
