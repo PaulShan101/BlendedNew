@@ -13,9 +13,10 @@
         android:layout_height="641dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient"
         android:layout_marginTop="74dp"
         android:layout_marginBottom="16dp"
-        android:background="@color/white">
+        >
 
         <ImageView
             android:id="@+id/imageView4"
@@ -41,7 +42,7 @@
             android:layout_marginBottom="582dp"
             android:text="Blending on a Budget"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="#FAF8F8"
             android:textSize="24sp" />
 
         <TextView
@@ -85,7 +86,7 @@ still getting the benefits from having real food in
 her diet and I have seen a positive change
 since I switch from giving her nothing but
 formula to a mix of the two. -Molly P, Kentucky"
-            android:textColor="@color/black"
+            android:textColor="#F8F5F5"
             android:textSize="12sp"
             android:textStyle="bold|italic" />
 

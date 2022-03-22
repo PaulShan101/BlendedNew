@@ -264,10 +264,10 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="31dp"
-                        android:layout_height="43dp"
+                        android:layout_width="52dp"
+                        android:layout_height="44dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/lightbulb" />
+                        android:src="@drawable/lightbulb1" />
 
                     <TextView
                         android:id="@+id/btn_history"

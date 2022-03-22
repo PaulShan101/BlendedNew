@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:background="@drawable/gradient"
 
     android:orientation="vertical"
@@ -13,9 +14,9 @@
     <RelativeLayout
         android:id="@+id/relGenerate"
         android:layout_width="match_parent"
+        android:background="@drawable/gradient"
         android:layout_height="672dp"
-        android:layout_marginTop="50dp"
-        android:background="@color/black">
+        android:layout_marginTop="50dp">
 
         <ImageView
             android:id="@+id/imageView4"
@@ -38,6 +39,8 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="43dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginBottom="582dp"
             android:text="Suppliments Via Tube"
             android:textAlignment="center"
@@ -49,6 +52,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginBottom="161dp"
             android:gravity="center"
             android:text="You should be able to give supplements

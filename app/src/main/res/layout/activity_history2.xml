@@ -3,30 +3,72 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#BAFF9800">
+    android:background="@drawable/gradient"
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:id="@+id/relGenerate"
         android:layout_width="match_parent"
         android:layout_height="676dp"
         android:layout_marginTop="50dp"
-        android:background="@color/white">
+        android:background="@drawable/gradient"
+        >
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/imageView4"
+            android:layout_width="116dp"
+            android:layout_height="110dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="152dp"
+            android:layout_marginBottom="455dp"
+            android:src="@drawable/boil" />
+
+        <TextView
+            android:id="@+id/textView3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/grapes" />
+            android:layout_height="66dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginBottom="582dp"
+            android:text="Food Temperature"
+            android:textAlignment="center"
+            android:textColor="#FBF8F8"
+            android:textSize="24sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="226dp"
+            android:layout_marginBottom="22dp"
             android:gravity="center"
-            android:text="Swipe Right to Open Scanner."
-            android:textColor="@color/black"
-            android:textSize="20sp"
+            android:text="Food Temperature: Something else you should
+consider is not feeding your blended meals
+cold. If you have meals stored in the
+refrigerator, you can take it out a few hours
+before the feeding to allow some of the chill to
+knock off. I personally have a warmer similar to
+what mothers use to warm baby bottles. That
+way, the blended meal is the prefect
+temperature. Every once in a while, especially
+during the summer months I might give a cool
+beverage through their tube, but overall I
+personally preprefer room temperature or
+warm. I understand eating food hot or cold is
+just a matter of personal and tradition
+preference. But I have found that people
+(especially people with feeding tubes) digest
+food better when it is warm. RECIPE BY MOM:
+VALERIA PARSONS"
+            android:textColor="#F8F5F5"
+            android:textSize="18sp"
             android:textStyle="bold|italic" />
 
     </RelativeLayout>
