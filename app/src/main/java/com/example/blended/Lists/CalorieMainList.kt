@@ -23,8 +23,12 @@ class CalorieMainList : AppCompatActivity() {
             "Banana (1)  27 GRAMS",
             "Orange (1)  16 GRAMS",
             "Apple  (1)  21 GRAMS",
-            "Soup   (1)  25 GRAMS",
-            "Grapes (1 Cup) 28 GRAMS"
+            "Grapes (1 Cup) 28 GRAMS",
+            "Blueberries (1 cup) 148 GRAMS",
+            "KIwi (1) 183 GRAMS",
+            "Pear (1) 178 GRAMS",
+            "Strawberry (1) 152 GRAMS"
+
 
 
     )
@@ -35,15 +39,19 @@ class CalorieMainList : AppCompatActivity() {
             "105 CALORIES",
             "65 CALORIES",
             "81 CALORIES",
-            "100 CALORIES",
-            "114 CALORIES"
+            "114 CALORIES",
+             "84 CALORIES",
+            "112 CALORIES",
+            "101 CALORIES",
+            "49 CALORIES"
+
 
 
     )
 
     //an array of images for the list view
     val imageId = arrayOf<Int>(
-            R.drawable.banana, R.drawable.orange1, R.drawable.apple,R.drawable.soup,R.drawable.grapes
+            R.drawable.bananas, R.drawable.orange, R.drawable.apple,R.drawable.grape,R.drawable.blueberries,R.drawable.kiwi,R.drawable.pear,R.drawable.strawberry1
 
 
             )
