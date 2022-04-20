@@ -26,7 +26,7 @@ class ContactUs : AppCompatActivity() {
         buttonSend.setOnClickListener { sendMail() }
     }
 
-    //sending an email
+    //sending an email new master update
     private fun sendMail() {
         val recipientList = mEditTextTo!!.text.toString()
         val recipients = recipientList.split(",".toRegex()).toTypedArray()
