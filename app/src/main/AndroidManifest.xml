@@ -29,9 +29,7 @@
             android:name=".HomeInfo"
             android:screenOrientation="portrait" />
 
-        <activity
-            android:name=".Contacts4"
-            android:screenOrientation="portrait" />
+
 
 
 
@@ -39,7 +37,7 @@
             android:name=".ContactUs"
             android:screenOrientation="portrait" />
 
-        <activity android:name=".Lists.CalorieMainList"
+        <activity android:name=".CalorieMainList"
             android:screenOrientation="portrait"/>
 
         <activity
@@ -50,14 +48,11 @@
             android:name=".HomeDrawer"
             android:screenOrientation="portrait" />
 
-        <activity
-            android:name=".Calories"
+
+        <activity android:name=".NewDiaryActivity"
             android:screenOrientation="portrait" />
 
-        <activity android:name=".Diary.NewDiaryActivity"
-            android:screenOrientation="portrait" />
-
-        <activity android:name=".Diary.DiaryActivity"
+        <activity android:name=".DiaryActivity"
             android:screenOrientation="portrait" />
 
         <activity
@@ -69,23 +64,23 @@
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".History"
+            android:name=".Tips"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".History1"
+            android:name=".Tips1"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".History2"
+            android:name=".Tips2"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.blended.MainActivity"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".New"
+            android:name="com.example.blended.New"
             android:screenOrientation="portrait" />
     </application>
 

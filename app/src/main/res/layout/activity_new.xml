@@ -19,48 +19,78 @@
         android:orientation="vertical"
         tools:context=".view.NewActivity">
 
-            <LinearLayout
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_gravity="center"
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="15dp"
+                android:imageUrl="@{isData.img}"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:id="@+id/img"
-                    android:scaleType="fitCenter"
-                    android:layout_marginBottom="15dp"
-                    android:imageUrl="@{isData.img}"
-                    android:layout_width="match_parent"
-                    android:layout_height="220dp"/>
-                <View
-                    android:background="@android:color/darker_gray"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"/>
+                android:layout_height="220dp"/>
+            <View
+                android:background="@android:color/darker_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
 
 
-                <TextView
-                    android:id="@+id/name"
-                    android:text="@{isData.name}"
-                    android:gravity="center"
+            <TextView
+                android:id="@+id/name"
+                android:text="@{isData.name}"
+                android:gravity="center"
 
-                    android:textStyle="bold|normal"
-                    android:textSize="22sp"
-                    android:elevation="15dp"
-                    android:padding="10dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:background="@color/black"
-                    android:textColor="@color/white"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-                <View
-                    android:background="@android:color/darker_gray"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"/>
+                android:textStyle="bold|normal"
+                android:textSize="22sp"
+                android:elevation="15dp"
+                android:padding="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-                <ScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:gravity="start"
+                android:text="@{isData.date}"
+
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold|normal" />
+
+
+            <TextView
+                android:id="@+id/calories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/black"
+                android:elevation="15dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@{isData.calories}"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold|normal" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
                 <TextView
                     android:id="@+id/info"
                     android:text="@{isData.info}"
@@ -77,10 +107,9 @@
                     android:layout_height="wrap_content"/>
 
 
+            </ScrollView>
 
-                </ScrollView>
-
-            </LinearLayout>
+        </LinearLayout>
 
 
 

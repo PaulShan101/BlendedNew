@@ -9,7 +9,7 @@ android:layout_height="match_parent"
 android:backgroundTintMode="screen"
 android:gravity="center"
 android:orientation="vertical"
-tools:context=".MainActivity">
+tools:context="blended.example.blended.SpecialRecipe.MainActivity">
 
 
     <ImageView

@@ -4,7 +4,7 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.blended.TubeCare4">
+    tools:context="com.example.blended.TubeCare.TubeCare4">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -23,82 +23,26 @@
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:paddingRight="10dp"
-            android:text="heading 4"
+            android:text="Positioning"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:autoText="false"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="79dp"
-            android:paddingLeft="10dp"
-            android:paddingTop="20dp"
-            android:paddingRight="10dp"
-
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="79dp"
-            android:paddingLeft="10dp"
-            android:paddingTop="20dp"
-            android:paddingRight="10dp"
-
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="85dp"
-            android:paddingLeft="10dp"
-            android:paddingTop="20dp"
-            android:paddingRight="10dp"
-
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:paddingLeft="10dp"
-            android:paddingTop="20dp"
-            android:paddingRight="10dp"
-
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="match_parent"
-            android:layout_height="76dp"
+            android:layout_height="195dp"
+            android:autoText="false"
             android:paddingLeft="10dp"
-            android:paddingTop="20dp"
             android:paddingRight="10dp"
-            android:text="info 6"
+            android:text="Positions for receiving tube feedings:\n
+Option 1: Propped up in bed or on a couch in a half sitting position with the head raised at least 30 degrees\n
+Option 2: Sitting up in a chair
+Never while lying flat"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
 
 
     </LinearLayout>

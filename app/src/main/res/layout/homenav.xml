@@ -6,15 +6,21 @@
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
+    android:background="@drawable/gradient"
     tools:openDrawer="start">
 
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/original" />
 
     <include
         layout="@layout/app_bar_home"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:textAlignment="center" />
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navView"

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relGenerate"
+        android:layout_width="match_parent"
+        android:layout_height="676dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/gradient"
+        >
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="158dp"
+            android:layout_height="162dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="135dp"
+            android:layout_marginBottom="515dp"
+            android:src="@drawable/boil" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="391dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="167dp"
+            android:layout_marginBottom="118dp"
+            android:gravity="center"
+            android:text="Food Temperature: Something else you should
+consider is not feeding your blended meals
+cold. If you have meals stored in the
+refrigerator, you can take it out a few hours
+before the feeding to allow some of the chill to
+knock off. I personally have a warmer similar to
+what mothers use to warm baby bottles. That
+way, the blended meal is the prefect
+temperature. Every once in a while, especially
+during the summer months I might give a cool
+beverage through their tube, but overall I
+personally preprefer room temperature or
+warm. I understand eating food hot or cold is
+just a matter of personal and tradition
+preference. But I have found that people
+(especially people with feeding tubes) digest
+food better when it is warm. RECIPE BY MOM:
+VALERIA PARSONS"
+            android:textColor="#F8F5F5"
+            android:textSize="14sp"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
